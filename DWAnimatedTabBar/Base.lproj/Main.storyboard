@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U2L-vd-Dy9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="Ckf-eN-t34">
+            <objects>
+                <tabBarController id="U2L-vd-Dy9" customClass="DWAnimatedTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dc9-r9-WJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XLl-6Y-xli" kind="relationship" relationship="viewControllers" id="Wgo-UY-vj4"/>
+                        <segue destination="14m-gG-3mi" kind="relationship" relationship="viewControllers" id="Xy3-ae-2d8"/>
+                        <segue destination="Oaj-OG-htO" kind="relationship" relationship="viewControllers" id="yhJ-Ea-X6L"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUz-Kq-iqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3041" y="-270"/>
+        </scene>
+        <!--Transform-->
+        <scene sceneID="JoB-j9-kdJ">
+            <objects>
+                <viewController id="Oaj-OG-htO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANC-fz-g88">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第三个VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="022-If-P8f">
+                                <rect key="frame" x="191" y="277" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="zE7-89-M8h"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Transform" image="Settings" id="HyB-i6-Whj" customClass="DWAnimatedTabBarItem">
+                        <connections>
+                            <outlet property="animation" destination="Buj-jS-yvR" id="LxN-cd-InU"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yF-3z-bRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Buj-jS-yvR" customClass="DWTransformAnimation">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-1906" y="-912"/>
+        </scene>
+        <!--Rotation-->
+        <scene sceneID="7Jy-1f-EHY">
+            <objects>
+                <viewController id="14m-gG-3mi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="veQ-ZY-gEu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第二个VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGO-AG-xLN">
+                                <rect key="frame" x="170" y="275" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="oje-4V-hee"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotation" image="icon_pin" id="hcs-eU-gvO" customClass="DWAnimatedTabBarItem">
+                        <connections>
+                            <outlet property="animation" destination="ZoB-zG-0cV" id="uT1-HG-X8k"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuJ-lB-d9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ZoB-zG-0cV" customClass="DWRotationAnimation"/>
+            </objects>
+            <point key="canvasLocation" x="-1886" y="-171"/>
+        </scene>
+        <!--Bounce-->
+        <scene sceneID="VJH-tJ-Dbz">
+            <objects>
+                <viewController id="XLl-6Y-xli" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eE5-5c-XFY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第一个VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zK-jK-SnA">
+                                <rect key="frame" x="150" y="394" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="kZS-A9-Ocl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bounce" image="icon_user" id="ziZ-DS-HiO" customClass="DWAnimatedTabBarItem">
+                        <connections>
+                            <outlet property="animation" destination="9xX-tC-Fxs" id="D6X-L9-5Rs"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ8-6l-V3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="9xX-tC-Fxs" customClass="DWBounceAnimation"/>
+            </objects>
+            <point key="canvasLocation" x="-2962" y="-1114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Settings" width="30" height="30"/>
+        <image name="icon_pin" width="30" height="30"/>
+        <image name="icon_user" width="30" height="30"/>
+    </resources>
+</document>
